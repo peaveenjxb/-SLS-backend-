@@ -43,11 +43,11 @@
 			<scope>runtime</scope>
 		</dependency>
 
-		<!-- H2 is only used for the test profile, so the test suite doesn't require a live MySQL instance -->
+		<!-- H2 is the default local database so the app can boot without a MySQL instance. -->
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
-			<scope>test</scope>
+			<scope>runtime</scope>
 		</dependency>
 
 		<!-- JWT support -->
